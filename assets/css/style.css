@@ -1,0 +1,99 @@
+:root {
+    --red: #ff5252;
+    --dark: #333;
+    --white: #f2f2f2;
+    --font-family: 'Lato', sans-serif;
+    --font-weight-light: 100;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+    --font-style-normal: normal;
+    --font-style-italic: italic;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+
+/*
+    container
+*/
+#container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/*
+    body
+*/
+body {
+    background-color: var(--white);
+}
+
+
+ 
+/*
+    header
+*/
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header>#logo {
+    width: 30rem;
+}
+
+
+
+/*
+    about
+*/
+#about {
+    font-weight: var(--font-style-normal);
+}
+
+#about>p {
+    font-size: large;
+    letter-spacing: 0.1rem;
+}
+
+
+/*
+    download
+*/
+#download button {
+    border: 0;
+    color: white;
+    cursor: pointer;
+    padding: 0.7rem;
+    font-weight: var(--font-weight-bold);
+    font-size: medium;
+    border-radius: 2px;
+    letter-spacing: 0.1rem;
+    background-color: var(--red);
+    box-shadow: 3px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+#download>button:hover {
+    background-color: #eb4545;
+}
+
+
+
+
+
+/*
+    
+*/
+main>div {
+    display: grid;
+    margin: 81px 0 0 0;
+    grid-template-columns: 2fr 3fr;
+    justify-items: end;
+}
